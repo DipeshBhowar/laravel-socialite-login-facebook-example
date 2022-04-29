@@ -59,7 +59,7 @@
                             </div>
 
                             <div class="card-footer">
-                                <form action="{{ url('delete/' . $value->id) }}" method="get">
+                                <form action="{{ url('delete/' . $value->id) }}" method="post">
                                     <input type="submit" value="Delete">
                                 </form>
                             </div>

@@ -33,7 +33,7 @@ Route::middleware([
     Route::get('create-post', [PostController::class, 'index']);
     Route::post('create-post', [PostController::class, 'store']);
     Route::get('post-list', [PostController::class, 'show']);
-    Route::get('delete/{id}', [PostController::class, 'destroy']);
+    Route::post('delete/{id}', [PostController::class, 'destroy']);
 });
 
 Route::get('auth/facebook', [SocialController::class, 'facebookRedirect']);
